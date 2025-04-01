@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h4>Eugenio Loeza</h4>
+    <h4>A01067846</h4>
+    <div class="container"></div>
+    <div class = "container-cal">
+        <div>
+            <div class = "screen">
+                <span id="operation"></span>
+
+
+
+            </div>
+            <div class = "container-btn">
+                <div class="botonC" onclick = "addNumber('C')">C</div>
+                <div class="botonC" onclick = "addNumber('')"></div>
+                <div class="botonC" onclick = "addNumber('')"></div>
+                <div class="botonO" onclick = "addNumber('^')">^</div>
+
+            </div>
+
+
+            <div class="container-btn">
+                <div class="boton" onclick = "addNumber(7)">7</div>
+                <div class="boton" onclick = "addNumber(8)">8</div>
+                <div class="boton" onclick = "addNumber(9)">9</div>
+                <div class="botonO" onclick = "addNumber('x')">x</div>
+
+            </div>
+
+            <div class="container-btn">
+                <div class="boton" onclick = "addNumber(6)">6</div>
+                <div class="boton" onclick = "addNumber(5)">5</div>
+                <div class="boton" onclick = "addNumber(4)">4</div>
+                <div class="botonO" onclick = "addNumber('-')">-</div>
+
+            </div>
+
+            <div class="container-btn">
+                <div class="boton" onclick = "addNumber(3)">3</div>
+                <div class="boton" onclick = "addNumber(2)">2</div>
+                <div class="boton" onclick = "addNumber(1)">1</div>
+                <div class="botonO" onclick = "addNumber('+')">+</div>
+
+            </div>
+            <div class="container-btn">
+                <div class = "boton" onclick="addNumber('=')">=</div>
+                <div class = "boton" onclick="addNumber('/')">/</div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="historyContainer" class="historial">
+            <h3>Historial</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
